@@ -126,13 +126,6 @@ body {
   padding: 140px 0;
 }
 .location-subtitle {
-  margin: 0 auto;
-  margin-top: 10px;
-  text-align: center;
-  line-height: 28.8px;
-  font-size: 18px;
-  color: #000;
-  opacity: 0.6;
   width: 735px;
 }
 .location__wrapper {
@@ -193,5 +186,26 @@ body {
   color: #000;
 }
 .inner-subtitle {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 28.8px;
+  font-size: 18px;
+  color: #000;
+  opacity: 0.6;
   margin-bottom: 50px;
+}
+
+/* Section Slider */
+.slider-subtitle {
+  margin-bottom: 60px;
+  width: 656px;
+}
+
+.sliders {
+  display: flex;
+  gap: 73px;
+}
+.sliders__block-wrapper {
+  width: 262px;
 }/*# sourceMappingURL=style.css.map */

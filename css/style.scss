@@ -122,13 +122,9 @@ body {
 
 /* Location styles */
 
-.main{
-
-}
 .location {
     padding: 140px 0;
     &-subtitle {
-        @include heading-text;
         width: 735px;
     }   
 
@@ -185,6 +181,45 @@ body {
     }
 
     &-subtitle {
+        @include heading-text;
         margin-bottom: 50px;
+    }
+}
+
+/* Section Slider */
+
+.slider {
+    &-subtitle{
+        margin-bottom: 60px;
+        width: 656px;
+    }
+}
+
+.sliders {
+    display: flex;
+    gap: 73px;
+
+    &__block-wrapper{
+        width: 262px;
+    }
+
+    &__block-text{
+        
+    }
+
+    &__block-location{
+  
+    }
+
+    &__block-star{
+  
+    }
+
+    &__block-booking {
+  
+    }
+
+    &__block-price {
+  
     }
 }
