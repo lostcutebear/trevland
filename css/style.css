@@ -43,11 +43,11 @@ body {
 .bg-orange {
   background: #C9453B;
   border-radius: 5px;
-  padding: 14px 35px 13px 36px;
   color: inherit;
   font-size: 16px;
   cursor: pointer;
   line-height: 24px;
+  color: #fff;
 }
 
 .header {
@@ -64,7 +64,6 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  padding-bottom: 208px;
 }
 .header__logo {
   font-size: 24px;
@@ -82,7 +81,21 @@ body {
   font-size: 18px;
   line-height: 27px;
 }
+.header__btn {
+  display: block;
+  width: 163px;
+  padding: 14px 0 13px 0;
+  text-align: center;
+}
+.header__btn:hover {
+  opacity: 0.75;
+  transition: opacity 0.32s linear;
+}
+.header__bottom {
+  margin-top: 208px;
+}
 .header__bottom-title {
+  max-width: 804px;
   margin-bottom: 30px;
   font-size: 65px;
   font-family: "Gelasio", serif;
@@ -98,6 +111,8 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .header__bottom-link {
-  padding: 18px 46px 17px 47px;
-  color: #fff;
+  display: block;
+  width: 187px;
+  text-align: center;
+  padding: 18px 0 17px 0;
 }/*# sourceMappingURL=style.css.map */

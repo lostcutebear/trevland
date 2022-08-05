@@ -12,11 +12,11 @@ body {
 .bg-orange {
     background: #C9453B;
     border-radius: 5px;
-    padding: 14px 35px 13px 36px;
     color: inherit;
     font-size: 16px;
     cursor: pointer;
     line-height: 24px;
+    color: #fff;
 }
 
 .header {
@@ -33,7 +33,6 @@ body {
         justify-content: space-between;
         align-items: center;
         color: #fff;
-        padding-bottom: 208px;
     }
 
     &__logo {
@@ -55,7 +54,24 @@ body {
         line-height: 27px;
     }
 
+    &__btn {
+        display: block;
+        width: 163px;
+        padding: 14px 0 13px 0;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.75;
+            transition: opacity 0.32s linear;
+        }
+    }
+
+    &__bottom {
+        margin-top: 208px;
+    }
+
     &__bottom-title {
+        max-width: 804px;
         margin-bottom: 30px;
         font-size: 65px;
         font-family: $gelasio;
@@ -73,7 +89,9 @@ body {
     }
 
     &__bottom-link {
-        padding: 18px 46px 17px 47px;
-        color: #fff;
+        display: block;
+        width: 187px;
+        text-align: center;
+        padding: 18px 0 17px 0;
     }
 }
