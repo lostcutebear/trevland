@@ -95,7 +95,7 @@ body {
   margin-top: 208px;
 }
 .header__bottom-title {
-  max-width: 804px;
+  width: 804px;
   margin-bottom: 30px;
   font-size: 65px;
   font-family: "Gelasio", serif;
