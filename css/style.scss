@@ -3,6 +3,31 @@ $gelasio: 'Gelasio', serif;
 $ribeye: 'Ribeye', cursive;
 $roboto: 'Roboto', sans-serif;
 
+@mixin heading {
+    margin-bottom: 20px;
+    text-align: center; 
+    font-size: 43px;
+    font-family: $gelasio;
+    font-weight: 500;
+    line-height: 60.2px;
+    color: #000;
+}
+
+@mixin heading-text {
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 28.8px;
+    font-size: 18px;
+    color: #000;
+    opacity: .6;
+}
+
+.container {
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
 body {
     font-family: $roboto;
     font-weight: 400;
@@ -12,7 +37,6 @@ body {
 .bg-orange {
     background: #C9453B;
     border-radius: 5px;
-    color: inherit;
     font-size: 16px;
     cursor: pointer;
     line-height: 24px;
@@ -23,10 +47,6 @@ body {
     background: rgba(0, 0, 0, 0.3) url("./../images/header-bg.jpg") no-repeat center;
     background-size: cover;
     padding: 35px 0 244px 0;
-    &__container{
-        max-width: 1145px;
-        margin: 0 auto;  
-    }
 
     &__top {
         display: flex;
@@ -93,5 +113,78 @@ body {
         width: 187px;
         text-align: center;
         padding: 18px 0 17px 0;
+        &:hover {
+            opacity: 0.75;
+            transition: opacity 0.32s linear;
+        }
+    }
+}
+
+/* Location styles */
+
+.main{
+
+}
+.location {
+    padding: 140px 0;
+    &-subtitle {
+        @include heading-text;
+        width: 735px;
+    }   
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 31px;
+    }
+
+    &__block {
+        max-width: 360px;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: 0.5s;
+        &:first-child .location__block-text {
+            padding: 0 27px 33px;
+        }
+
+        &:nth-child(2) .location__block-text {
+            padding: 0 34px 33px 37px; 
+        }
+
+        &:nth-child(3) .location__block-text {
+            padding: 0 13px 33px;
+        }
+
+        &:hover {
+            box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+        }
+    }
+  
+    &__block-img {
+
+    }
+  
+    &__block-title {
+        @include heading;
+        margin-top: 35px;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__block-text {
+        @include heading-text;
+    }
+}
+
+.inner {
+    &-title {
+        @include heading;
+    }
+
+    &-subtitle {
+        margin-bottom: 50px;
     }
 }
