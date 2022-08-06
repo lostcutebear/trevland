@@ -207,5 +207,58 @@ body {
   gap: 73px;
 }
 .sliders__block-wrapper {
-  width: 262px;
+  max-width: 262px;
+}
+.sliders__block-text {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 43px;
+  font-family: "Gelasio", serif;
+  font-weight: 500;
+  line-height: 60.2px;
+  color: #000;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+.sliders__block-location {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.603);
+  position: relative;
+}
+.sliders__block-location::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 16px;
+  background: url("./../images/location.svg") no-repeat center;
+}
+.sliders__block-star {
+  padding-left: 34px;
+  background: url("./../images/rating.svg") no-repeat left center;
+  margin-left: 50px;
+}
+.sliders__block-booking {
+  margin: 8px 0 8px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.sliders__block-price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #000;
+}
+.sliders__block-price span {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=style.css.map */
