@@ -189,6 +189,7 @@ body {
 /* Section Slider */
 
 .slider {
+    padding-bottom: 57px;
     &-subtitle{
         margin-bottom: 60px;
         width: 656px;
@@ -198,9 +199,15 @@ body {
 .sliders {
     display: flex;
     gap: 73px;
-
     &__block-wrapper{
-        max-width: 262px;
+        margin: 0 auto;
+        width: 262px;
+        cursor: pointer;
+        transition: 0.45s;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 
     &__block-text{
@@ -257,3 +264,52 @@ body {
         }
     }
 }
+
+.btn-slider {
+    position: absolute;
+    z-index: 10;
+}
+
+.btn-slick-prev {
+    bottom: -52px;
+    left: 34.5%;
+}
+
+.btn-slick-next {
+    bottom: -52px;
+    right: 34.5%;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: -48.5px;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    font-size: 0;
+    line-height: 0;
+}
+
+.slick-dots li:not(:last-child) { 
+    margin-right: 5px;
+}
+
+.slick-dots li.slick-active {
+    background: #C9453B;
+    transition: 0.45s;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    background: rgba(201, 69, 59, 0.1);
+    border-radius: 10px;
+    width: 75px;
+    height: 5px;
+}
+
+
