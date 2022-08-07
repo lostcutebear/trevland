@@ -275,6 +275,10 @@ body {
   z-index: 10;
 }
 
+.btn-slick-prev, .btn-slick-next {
+  cursor: pointer;
+}
+
 .btn-slick-prev {
   bottom: -52px;
   left: 34.5%;
