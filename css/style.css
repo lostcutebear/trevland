@@ -416,4 +416,67 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.801);
+}
+
+/* Footer Section */
+.footer {
+  padding: 70px 0 78px 0;
+  background: #e5e5e5;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__title, .footer__link {
+  line-height: 25.6px;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+.footer__link {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__title {
+  margin: 40px 0 10px 0;
+}
+.footer__social {
+  display: flex;
+  gap: 30.12px;
+}
+.footer__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+.footer__subscribe-title {
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+.footer__subscribe-form {
+  width: 333px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__subscribe-input {
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.062745098);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.062745098);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 195px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
+.footer__subscribe-btn {
+  width: 103px;
+  margin-left: 35px;
+  padding: 10px 0;
 }/*# sourceMappingURL=style.css.map */
