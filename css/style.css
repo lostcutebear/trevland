@@ -54,6 +54,10 @@ body {
   color: #fff;
 }
 
+.btn-mobile {
+  display: none;
+}
+
 .header {
   background: rgba(0, 0, 0, 0.3) url("./../images/header-bg.jpg") no-repeat center;
   background-size: cover;

@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+  .header {
+    padding: 35px 10px 244px 10px;
+  }
+}
+@media (max-width: 850px) {
+  .header__nav-list {
+    background: #fff;
+    position: absolute;
+    left: 100%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=media.css.map */

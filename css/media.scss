@@ -1,0 +1,39 @@
+@media (max-width: 1200px) {
+    .header {
+        padding: 35px 10px 244px 10px;
+        position: relative;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__nav-list {
+        background: #fff;
+        position: absolute;
+        left: 10%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px;
+    }
+
+    .header__top {
+        @include flex;
+        color: inherit;
+    }
+
+    .header__nav-list-link {
+        color: #000;
+    }
+
+    .btn-desktop {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: block;
+    }
+}
